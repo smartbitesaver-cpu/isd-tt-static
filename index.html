@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ISD Table Tennis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 1.5rem; max-width: 960px; }
+    h1, h2 { margin-bottom: 0.5rem; }
+    .section { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd; }
+    label { display: block; margin-top: 0.5rem; }
+    input, select, textarea { width: 100%; max-width: 400px; padding: 0.35rem; margin-top: 0.25rem; }
+    button { margin-top: 0.75rem; padding: 0.5rem 1rem; cursor: pointer; }
+    small { color: #555; }
+  </style>
+</head>
+<body>
+  <h1>ISD Table Tennis</h1>
+  <p>Static demo – form submissions will not be saved (no backend).</p>
+
+  <div class="section">
+    <h2>Kids Academy – Term 2 Registration</h2>
+    <form>
+      <label>Kid’s full name <input required></label>
+      <label>Date of birth <input type="date" required></label>
+      <label>Parent’s full name <input required></label>
+      <label>Parent’s email <input type="email" required></label>
+      <label>Parent’s mobile <input required></label>
+      <label>Age group
+        <select required>
+          <option value="">Select…</option>
+          <option>U8</option>
+          <option>U12</option>
+          <option>U16</option>
+        </select>
+      </label>
+      <label>Training frequency
+        <select required>
+          <option value="">Select…</option>
+          <option>1x per week</option>
+          <option>2x per week</option>
+          <option>3x per week</option>
+        </select>
+      </label>
+      <label>Preferred training days
+        <input placeholder="e.g. Mon/Wed 4–5 pm">
+      </label>
+      <label>Notes
+        <textarea rows="3" placeholder="Experience, injuries, special requests"></textarea>
+      </label>
+      <label>
+        <input type="checkbox" required>
+        I understand that final schedule and group placement will be confirmed by the coach.
+      </label>
+      <p><strong>Policies:</strong></p>
+      <small>
+        Payment for the Kids Academy term must be completed on the first day of training.<br>
+        Make‑up classes are only granted if a medical certificate is provided by the parent. Make‑up eligibility, timing, and placement are subject to coach approval.<br>
+        No online payment is taken here; payment is done at the venue or via a separate payment link if requested.
+      </small>
+      <br>
+      <button type="submit">Submit (demo only)</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>Book a Lesson</h2>
+    <form>
+      <label>Full name <input required></label>
+      <label>Email <input type="email" required></label>
+      <label>Mobile <input required></label>
+      <label>Lesson type
+        <select required>
+          <option value="">Select…</option>
+          <option>Private 1‑on‑1</option>
+          <option>Semi‑private 2‑on‑1</option>
+          <option>Group of 3 (75 min)</option>
+          <option>Group of 4+ (90 min)</option>
+          <option>Play with the Pro – 60 min</option>
+        </select>
+      </label>
+      <label>Package size
+        <select required>
+          <option value="">Select…</option>
+          <option>1 session</option>
+          <option>5 sessions</option>
+          <option>10 sessions</option>
+        </select>
+      </label>
+      <label>Preferred days and time range
+        <input placeholder="e.g. Mon–Thu, 6–9 pm">
+      </label>
+      <label>Notes
+        <textarea rows="3" placeholder="Partner, level, coach preference"></textarea>
+      </label>
+      <label>
+        <input type="checkbox" required>
+        I understand this is a booking request and that the coach will confirm the final schedule.
+      </label>
+      <button type="submit">Submit (demo only)</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>Adults – Group Trainings / Tournaments / Table Booking</h2>
+    <p><strong>Group trainings:</strong> Mon 7:00 pm – 100 AED; Wed 7:00 pm – 100 AED; Sat 11:00 am – 100 AED.</p>
+    <p><strong>Tournaments:</strong> Tue 7:30 pm – Open (75 AED); Thu 7:00 pm – “King Table” (75 AED).</p>
+
+    <h3>Join Group Training</h3>
+    <form>
+      <label>Full name <input required></label>
+      <label>Email <input type="email" required></label>
+      <label>Mobile <input required></label>
+      <label>Sessions
+        <input placeholder="e.g. Monday 7 pm, Saturday 11 am">
+      </label>
+      <label>Notes
+        <textarea rows="2"></textarea>
+      </label>
+      <small>Payment is at the venue or via a separate payment link.</small><br>
+      <button type="submit">Submit (demo only)</button>
+    </form>
+
+    <h3>Join Tournament</h3>
+    <form>
+      <label>Full name <input required></label>
+      <label>Email <input type="email" required></label>
+      <label>Mobile <input required></label>
+      <label>Tournament type
+        <select required>
+          <option value="">Select…</option>
+          <option>Open</option>
+          <option>King Table</option>
+        </select>
+      </label>
+      <label>Desired date <input type="date"></label>
+      <label>Notes
+        <textarea rows="2"></textarea>
+      </label>
+      <button type="submit">Submit (demo only)</button>
+    </form>
+
+    <h3>Book a Table</h3>
+    <form>
+      <label>Full name <input required></label>
+      <label>Email <input type="email" required></label>
+      <label>Mobile <input required></label>
+      <label>Date of booking <input type="date" required></label>
+      <label>Start time <input type="time" required></label>
+      <label>End time <input type="time" required></label>
+      <label>Number of tables <input type="number" min="1" value="1" required></label>
+      <label>Number of rackets to rent <input type="number" min="0" value="0"></label>
+      <small>Racket rental is AED 20 per racket, including balls.</small><br>
+      <small>Bookings can be cancelled at least 24 hours in advance without charge. If not cancelled at least 24 hours before the start time, or in case of no‑show, standard charges may apply.</small>
+      <br>
+      <button type="submit">Submit (demo only)</button>
+    </form>
+  </div>
+</body>
+</html>
